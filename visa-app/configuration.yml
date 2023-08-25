@@ -181,3 +181,7 @@ client:
   contactEmail: ${VISA_CLIENT_CONFIG_CONTACT_EMAIL:-null}
   experiments:
     openDataIncluded: ${VISA_CLIENT_CONFIG_INCLUDE_OPEN_DATA:-false}
+  extraMenus:
+    - title: Metrics
+      iconShape: pie-chart
+      iframeSrc: none
