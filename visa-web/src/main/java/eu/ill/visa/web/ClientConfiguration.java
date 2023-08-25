@@ -25,7 +25,7 @@ public class ClientConfiguration {
     @Valid
     private ExperimentsConfiguration experimentsConfiguration;
 
-    private List<Menu> extraMenus;
+    private List<Page> extraPages;
 
     private String contactEmail;
 
@@ -66,16 +66,16 @@ public class ClientConfiguration {
         this.contactEmail = contactEmail;
     }
 
-    @JsonProperty("extraMenus")
-    public List<Menu> getExtraMenus() {
-        return extraMenus;
+    @JsonProperty("extraPages")
+    public List<Page> getExtraPages() {
+        return extraPages;
     }
 
-    public void setExtraMenus(List<Menu> extraMenus) {
-        this.extraMenus = extraMenus;
+    public void setExtraPages(List<Page> extraPages) {
+        this.extraPages = extraPages;
     }
 
-    public static class Menu {
+    public static class Page {
 
         private String  title;
         private String  iconShape;

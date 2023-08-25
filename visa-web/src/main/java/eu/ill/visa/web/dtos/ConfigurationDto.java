@@ -19,7 +19,7 @@ public class ConfigurationDto {
     private Map<String, String> metadata;
 
     private String contactEmail;
-    private List<ClientConfiguration.Menu> extraMenus;
+    private List<ClientConfiguration.Page> extraPages;
 
     public String getVersion() {
         return version;
@@ -77,11 +77,11 @@ public class ConfigurationDto {
         this.experiments = experiments;
     }
 
-    public List<ClientConfiguration.Menu> getExtraMenus() {
-        return extraMenus;
+    public List<ClientConfiguration.Page> getExtraPages() {
+        return extraPages;
     }
 
-    public void setExtraMenus(List<ClientConfiguration.Menu> extraMenus) {
-        this.extraMenus = extraMenus;
+    public void setExtraPages(List<ClientConfiguration.Page> extraPages) {
+        this.extraPages = extraPages;
     }
 }
