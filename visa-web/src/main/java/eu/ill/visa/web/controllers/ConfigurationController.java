@@ -59,6 +59,7 @@ public class ConfigurationController extends AbstractController {
         configurationDto.setAnalytics(this.clientConfiguration.getAnalyticsConfiguration());
         configurationDto.setDesktop(this.clientConfiguration.getDesktopConfiguration());
         configurationDto.setExperiments(this.clientConfiguration.getExperimentsConfiguration());
+        configurationDto.setExtraMenus(this.clientConfiguration.getExtraMenus());
         configurationDto.setMetadata(metadata);
         return createResponse(configurationDto);
     }

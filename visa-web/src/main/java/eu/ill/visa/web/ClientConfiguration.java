@@ -66,6 +66,7 @@ public class ClientConfiguration {
         this.contactEmail = contactEmail;
     }
 
+    @JsonProperty("extraMenus")
     public List<Menu> getExtraMenus() {
         return extraMenus;
     }
@@ -104,5 +105,5 @@ public class ClientConfiguration {
             this.iframeSrc = iframeSrc;
         }
     }
-    
+
 }

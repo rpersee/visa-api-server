@@ -4,8 +4,10 @@ import eu.ill.visa.web.AnalyticsConfiguration;
 import eu.ill.visa.web.DesktopConfiguration;
 import eu.ill.visa.web.ExperimentsConfiguration;
 import eu.ill.visa.web.LoginConfiguration;
+import eu.ill.visa.web.ClientConfiguration;
 
 import java.util.Map;
+import java.util.List;
 
 public class ConfigurationDto {
 
@@ -17,6 +19,7 @@ public class ConfigurationDto {
     private Map<String, String> metadata;
 
     private String contactEmail;
+    private List<ClientConfiguration.Menu> extraMenus;
 
     public String getVersion() {
         return version;
@@ -72,5 +75,13 @@ public class ConfigurationDto {
 
     public void setExperiments(ExperimentsConfiguration experiments) {
         this.experiments = experiments;
+    }
+
+    public List<ClientConfiguration.Menu> getExtraMenus() {
+        return extraMenus;
+    }
+
+    public void setExtraMenus(List<ClientConfiguration.Menu> extraMenus) {
+        this.extraMenus = extraMenus;
     }
 }
