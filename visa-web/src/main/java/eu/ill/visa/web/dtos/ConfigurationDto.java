@@ -4,7 +4,7 @@ import eu.ill.visa.web.AnalyticsConfiguration;
 import eu.ill.visa.web.DesktopConfiguration;
 import eu.ill.visa.web.ExperimentsConfiguration;
 import eu.ill.visa.web.LoginConfiguration;
-import eu.ill.visa.web.ClientConfiguration;
+import eu.ill.visa.web.PagesConfiguration;
 
 import java.util.Map;
 import java.util.List;
@@ -19,7 +19,7 @@ public class ConfigurationDto {
     private Map<String, String> metadata;
 
     private String contactEmail;
-    private List<ClientConfiguration.Page> extraPages;
+    private PagesConfiguration extraPages;
 
     public String getVersion() {
         return version;
@@ -77,11 +77,11 @@ public class ConfigurationDto {
         this.experiments = experiments;
     }
 
-    public List<ClientConfiguration.Page> getExtraPages() {
+    public PagesConfiguration getExtraPages() {
         return extraPages;
     }
 
-    public void setExtraPages(List<ClientConfiguration.Page> extraPages) {
+    public void setExtraPages(PagesConfiguration extraPages) {
         this.extraPages = extraPages;
     }
 }

@@ -25,7 +25,9 @@ public class ClientConfiguration {
     @Valid
     private ExperimentsConfiguration experimentsConfiguration;
 
-    private List<Page> extraPages;
+    @NotNull
+    @Valid
+    private PagesConfiguration pagesConfiguration;
 
     private String contactEmail;
 
@@ -67,43 +69,12 @@ public class ClientConfiguration {
     }
 
     @JsonProperty("extraPages")
-    public List<Page> getExtraPages() {
-        return extraPages;
+    public PagesConfiguration getPagesConfiguration() {
+        return pagesConfiguration;
     }
 
-    public void setExtraPages(List<Page> extraPages) {
-        this.extraPages = extraPages;
+    public void setPagesConfiguration(PagesConfiguration pagesConfiguration) {
+        this.pagesConfiguration = pagesConfiguration;
     }
-
-    public static class Page {
-
-        private String  title;
-        private String  iconShape;
-        private String  iframeSrc;
-
-        public String getTitle() {
-            return title;
-        }
-
-        public void setTitle(String title) {
-            this.title = title;
-        }
-
-        public String getIconShape() {
-            return iconShape;
-        }
-
-        public void setIconShape(String iconShape) {
-            this.iconShape = iconShape;
-        }
-
-        public String getIframeSrc() {
-            return iframeSrc;
-        }
-
-        public void setIframeSrc(String iframeSrc) {
-            this.iframeSrc = iframeSrc;
-        }
-    }
-
+    
 }
