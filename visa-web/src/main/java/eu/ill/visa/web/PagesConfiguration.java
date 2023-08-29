@@ -9,6 +9,8 @@ class Page {
     private String  title;
     private String  iconShape;
     private String  iframeSrc;
+    private String  iframeHeight = "100%";
+    private String  iframeWidth = "100%";
 
     public String getTitle() {
         return title;
@@ -34,4 +36,20 @@ class Page {
         this.iframeSrc = iframeSrc;
     }
 
+    public String getIframeHeight() {
+        return iframeHeight;
+    }
+
+    public void setIframeHeight(String iframeHeight) {
+        this.iframeHeight = iframeHeight;
+    }
+
+    public String getIframeWidth() {
+        return iframeWidth;
+    }
+
+    public void setIframeWidth(String iframeWidth) {
+        this.iframeWidth = iframeWidth;
+    }
+    
 }
